@@ -1,0 +1,95 @@
+@charset "UFT-8";
+
+
+/* rezetndo as configurações */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* cabeçalho */
+
+header
+{
+    /* size */
+    width: 100vw;
+
+    /* box model */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    /* background */
+    background-color: aliceblue;
+
+
+}
+
+/* imagem alexandre */
+header > img
+{
+    width: calc(408px / 2);
+    height: calc(612px / 2);
+}
+/* container do titlo */
+#title-container
+{
+    /* box model */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    justify-items: center;
+
+
+    
+}
+/* toda imahem que estiver no container title */
+#title-container img
+{
+    width: 25px;
+    height: 25px;
+
+    /* box model */
+    margin-top: 5px;
+}
+
+/* icone das redes sociais do titulo */
+#container-imagens-icons
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    column-gap: 10px;
+}
+
+/* parte principal do site */
+main
+{
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+/* galery container */
+
+#galery-container
+{
+    /* size */
+    width: 90vw;
+    height: 500px;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    gap: 10px;
+    margin: auto;
+    /* backgorud */
+    background-color: rgba(128, 128, 128, 0.37);
+
+}
+
+#galery-container img {
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    width: calc(200px / 2);
+}
