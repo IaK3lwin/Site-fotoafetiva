@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 /* cabeçalho */
 
 header
@@ -65,31 +71,105 @@ header > img
 /* parte principal do site */
 main
 {
-    width: 100vw;
+    width: 98%;
     background-color: rgba(0, 0, 0, 0.281);
 }
 
-/* galery container */
+/* galery box */
 
-#galery-container
+section#galery-box
 {
     /* size */
-    width: 90vw;
-    height: 500px;
+    width: 90%;
+    height: 400px;
 
-    display: flex;
-    flex-flow: row wrap;
-
-    gap: 10px;
+    /* box model */
     margin: auto;
-    /* backgorud */
-    background-color: rgba(128, 128, 128, 0.37);
-
+    overflow-y: hidden ;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 5px;
+    /* spacing */
+    margin-bottom: 10px;
+    /* background */
+    background-color: rgba(240, 248, 255, 0.562);
 }
 
-#galery-container img {
-    flex-shrink: 0;
-    flex-grow: 0;
+#galery
+{
+    /* size */
+    width: 800px;
+    height: 400px;
+    /* columns */
+    column-count: 3;
+    column-gap: 10px;
 
-    width: calc(200px / 2);
+    /* background */
+
+
+    
+}
+
+/* bOTÇOES DE SCROLL */
+#btn-next
+{
+    position: absolute;
+    top: 80%;
+    left: 90%;
+}
+
+#btn-back
+{
+    position: absolute;
+    top: 80%;
+    left: 9%;
+
+    display: none;
+}
+
+
+.btn-scroll
+{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 1.3em;
+    border-radius: 4px;
+}
+
+.btn-scroll:hover
+{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+#galery img
+{
+    
+    border-radius: 5px;
+    
+    
+}
+
+#galery img:hover
+{
+    cursor: pointer;
+    
+
+    background-blend-mode: multiply;
+    
+}
+
+section#about-me
+{
+    /* box model */
+    padding: 20px;
+
+    /* background-color */
+    background-color: #5C3C3C;
+
 }
