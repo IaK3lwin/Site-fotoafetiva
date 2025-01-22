@@ -8,10 +8,43 @@
     box-sizing: border-box;
 }
 
+
+
+/* ESTILIZAÇÕES GERAIS */
+
 body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+}
+
+/* ESTILIZAÇÃO PARAGRAFOS */
+p 
+{
+    /* size */
+    /* spacing */
+    padding-bottom: 7%;
+    /* text */
+    text-align: justify;
+    text-indent: 20px;
+    color: white;
+
+}
+
+/* ESTILIZAÇÃO TITULO NIVEL 1  */
+h2
+{
+
+    /* TEXTS */
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+h3
+{
+    font-size: clamp(0.7em, 0.8em, 0.9em);
+    font-weight: bold;
 }
 
 /* cabeçalho */
@@ -71,8 +104,7 @@ header > img
 /* parte principal do site */
 main
 {
-    width: 98%;
-    background-color: rgba(0, 0, 0, 0.281);
+    width: 100vw;
 }
 
 /* galery box */
@@ -113,11 +145,13 @@ section#galery-box
 /* bOTÇOES DE SCROLL */
 #btn-next
 {
+    /* position */
     position: absolute;
     top: 80%;
     left: 90%;
 }
 
+/* botão de voltar as imagens  */
 #btn-back
 {
     position: absolute;
@@ -127,7 +161,7 @@ section#galery-box
     display: none;
 }
 
-
+/* estilização dos botões scrools generica */
 .btn-scroll
 {
     padding: 10px;
@@ -139,6 +173,7 @@ section#galery-box
     border-radius: 4px;
 }
 
+/* estilização dos botões scrools generica : HOVER*/
 .btn-scroll:hover
 {
     cursor: pointer;
@@ -146,7 +181,7 @@ section#galery-box
 }
 
 
-
+/* IMAGENS DA GALERIA */
 #galery img
 {
     
@@ -155,21 +190,119 @@ section#galery-box
     
 }
 
+/* IMGENS DA GALERIA : HOVER */
 #galery img:hover
 {
     cursor: pointer;
-    
 
-    background-blend-mode: multiply;
-    
 }
 
+/* SESSÃO DE SOBRE  */
 section#about-me
 {
     /* box model */
-    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 
     /* background-color */
     background-color: #5C3C3C;
 
+    /* ESTILIZAÇÃO DO H2 DA SESSÃO SOBRE MIM */
+    h2 
+    {
+        /* SPACING */
+        padding: 20px ;
+    }
 }
+
+
+/* estilização das âncoras da sessão sobre me */
+section#about-me a
+{
+    /* size */
+    
+    /* spacing */
+    padding: 10px 30px 10px 30px;
+    /* text */
+    text-decoration: none;
+    color: white;
+    /* background */
+    background-color: black;
+    border-radius: 20px;
+}
+
+/* sessão de coantatos */
+section#contacts
+{
+    /* spacing */
+    padding: 3%;
+
+    /* box model */
+    display: flex;
+    /*  flex direction e flex wrap */
+    flex-flow: column wrap;
+    /* posisão nos eixos tansversal e principal */
+    justify-content: center; /* main axis  */
+    align-items: center; /* cross axis  */
+
+    h2 {
+        color: black;
+        padding: 5% 3% 7% 3%;
+    }
+
+}
+
+/* container dos icons de contatos  */
+section#icons-contacts-container
+{
+    /* box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+   
+}
+
+section#icons-contacts-container a
+{
+
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    margin-bottom: 20%;
+
+}
+
+/* footer do site */
+footer
+{
+    /*box model*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 30px;
+
+    /* background */
+    background-color: #5C3C3C;
+    color: white;
+
+}
+
+
+footer section
+{
+    padding-right: 5%;
+    padding-left: 5%;
+
+    border-right: 2px solid black;
+    border-left: 2px  solid black;
+}
+

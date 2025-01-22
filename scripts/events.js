@@ -11,7 +11,7 @@ function scroll_left(value)
     galery.scrollBy(value, 0)
 
     //verificando se o botao se voltar pode aparecer
-    if (galery.scrollLeft >= 200)
+    if (galery.scrollLeft >= scroll_value + 100)
     {
         btn_back.style.display = 'block'
     }
