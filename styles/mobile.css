@@ -154,23 +154,23 @@ section#galery-box
 {
     /* position */
     position: absolute;
-    top: 80%;
-    left: 90%;
+
 }
 
 /* botão de voltar as imagens  */
 #btn-back
 {
     position: absolute;
-    top: 80%;
-    left: 9%;
-
+    left: 7%;
     display: none;
 }
 
 /* estilização dos botões scrools generica */
 .btn-scroll
 {
+    top: 60%;
+    left: 90%;
+
     padding: 10px;
     border: none;
     background-color: transparent;
