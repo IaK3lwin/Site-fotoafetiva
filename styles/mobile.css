@@ -59,7 +59,7 @@ header
     /* box model */
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     /* background */
     background-color: aliceblue;
 
