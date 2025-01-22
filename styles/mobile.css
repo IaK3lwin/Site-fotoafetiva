@@ -133,7 +133,7 @@ section#galery-box
     width: 800px;
     height: 400px;
     /* columns */
-    column-count: 3;
+    column-count: 1;
     column-gap: 10px;
 
     /* background */
@@ -186,6 +186,8 @@ section#galery-box
 {
     
     border-radius: 5px;
+    width: 100px;
+    height: 100px;
     
     
 }
