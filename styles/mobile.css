@@ -39,6 +39,8 @@ h2
     color: white;
     font-weight: bolder;
     font-size: 2em;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 h3
@@ -53,7 +55,7 @@ header
 {
     /* size */
     width: 100vw;
-
+    
     /* box model */
     display: flex;
     flex-flow: row nowrap;
@@ -74,6 +76,7 @@ header > img
 #title-container
 {
     /* box model */
+   
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -81,6 +84,10 @@ header > img
 
 
     
+}
+#title-container h1 {
+    font-size: 25px;
+    margin-right: 5px;
 }
 /* toda imahem que estiver no container title */
 #title-container img
