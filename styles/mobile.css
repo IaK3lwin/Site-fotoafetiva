@@ -168,7 +168,7 @@ section#galery-box
 /* estilização dos botões scrools generica */
 .btn-scroll
 {
-    top: 60%;
+    top: 50vh;
     left: 90%;
 
     padding: 10px;
