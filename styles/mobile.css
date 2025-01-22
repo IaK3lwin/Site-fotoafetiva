@@ -111,6 +111,7 @@ header > img
 /* parte principal do site */
 main
 {
+    position: relative;
     width: 100vw;
 }
 
@@ -125,7 +126,7 @@ section#galery-box
     /* box model */
     margin: auto;
     overflow-y: hidden ;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     padding: 5px;
     /* spacing */
@@ -168,7 +169,7 @@ section#galery-box
 /* estilização dos botões scrools generica */
 .btn-scroll
 {
-    top: 50vh;
+    top: 10%;
     left: 90%;
 
     padding: 10px;
