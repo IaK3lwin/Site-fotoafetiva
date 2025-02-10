@@ -213,7 +213,7 @@ section#galery-box::-webkit-scrollbar
 {
     position: absolute;
     left: 7%;
-    display: none;
+    display: block;
 }
 
 
