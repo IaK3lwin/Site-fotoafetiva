@@ -61,8 +61,14 @@ header
     flex-flow: row nowrap;
     justify-content: space-evenly;
     /* background */
+    
     background-color: aliceblue;
+    background: url(../assets/imgs/bg-header.jpg) no-repeat center center;
+    
+    background-size: cover;
+    color: wheat;
 
+    backdrop-filter: blur(5px);
 
 }
 
@@ -179,7 +185,7 @@ section#galery-box::-webkit-scrollbar
 .btn-scroll
 {
     top: 10%;
-    left: 90%;
+
 
     padding: 10px;
     border: none;
@@ -205,6 +211,7 @@ section#galery-box::-webkit-scrollbar
 {
     /* position */
     position: absolute;
+    left: 86%;
 
 }
 
