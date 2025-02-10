@@ -66,6 +66,7 @@ header
 
 }
 
+
 /* imagem alexandre */
 header > img
 {
@@ -81,13 +82,17 @@ header > img
     flex-flow: column nowrap;
     justify-content: center;
     justify-items: center;
+    /* trata o espaço em branco */
+    white-space: nowrap;
 
 
     
 }
 #title-container h1 {
-    font-size: 25px;
+    /*  text  */
+    font-size: 1em;
     margin-right: 5px;
+
 }
 /* toda imahem que estiver no container title */
 #title-container img
@@ -113,7 +118,11 @@ main
 {
     position: relative;
     width: 100vw;
+    scrollbar-width: 0px;
+    scroll-behavior: smooth;
 }
+
+
 
 /* galery box */
 
@@ -133,6 +142,12 @@ section#galery-box
     margin-bottom: 10px;
     /* background */
     background-color: rgba(240, 248, 255, 0.562);
+}
+
+section#galery-box::-webkit-scrollbar
+{
+    width: 0px;
+    
 }
 
 #galery
@@ -312,7 +327,7 @@ footer section
     padding-right: 5%;
     padding-left: 5%;
 
-    border-right: 2px solid black;
-    border-left: 2px  solid black;
+    border-right: 1px solid black;
+    border-left: 1px  solid black;
 }
 
