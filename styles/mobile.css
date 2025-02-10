@@ -357,8 +357,7 @@ section#about-me a
 section#contacts
 {
     /* spacing */
-    padding: 2%;
-
+    padding: 50px;
     /* box model */
     display: flex;
     /*  flex direction e flex wrap */
@@ -369,7 +368,7 @@ section#contacts
 
     h2 {
         color: black;
-        padding: 5% 3% 5% 3%;
+        margin: 30px;
     }
 
 }
