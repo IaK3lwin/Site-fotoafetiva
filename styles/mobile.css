@@ -136,6 +136,8 @@ header > img
 /* parte principal do site */
 main
 {
+    display: flex;
+    flex-flow: column;
     position: relative;
     width: 100vw;
     scrollbar-width: 0px;
@@ -188,9 +190,10 @@ section#galery-box::-webkit-scrollbar
 /* estilização dos botões scrools generica */
 .btn-scroll
 {
+
     top: 10%;
 
-
+    z-index: 1;
     padding: 10px;
     border: none;
     background-color: transparent;
@@ -203,11 +206,14 @@ section#galery-box::-webkit-scrollbar
 /* estilização dos botões scrools generica : HOVER*/
 .btn-scroll:hover
 {
+    position: absolute;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.37);
     color: white;
 
     backdrop-filter: blur(2px);
+    
+    order: 2;
 }
 
 /* bOTÇOES DE SCROLL */
@@ -227,7 +233,13 @@ section#galery-box::-webkit-scrollbar
     display: block;
 }
 
+#galery img:hover
+{
 
+    transform: scale(1.2);
+
+
+}
 
 /* IMAGENS DA GALERIA */
 #galery img
@@ -236,6 +248,7 @@ section#galery-box::-webkit-scrollbar
     border-radius: 5px;
     width: 100px;
     height: 100px;
+    order: 1;
     
     
 }
