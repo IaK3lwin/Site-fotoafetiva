@@ -10,7 +10,7 @@ var scroll_value = 100
 
 // evento de clicar no botão >
 btn_next.addEventListener('click', function() {
-    scroll_move( scroll_value, btn_next, galery)
+    scroll_move(scroll_value, btn_next, galery)
 })
 
 // evento de clicar no botão <
