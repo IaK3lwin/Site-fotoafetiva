@@ -66,7 +66,7 @@ header
     background: url(../assets/imgs/bg-header.jpg) no-repeat center center;
     
     background-size: cover;
-    color: wheat;
+    color: white;
 
     backdrop-filter: blur(5px);
 
@@ -295,13 +295,69 @@ section#about-me a
     /* background */
     background-color: black;
     border-radius: 20px;
+    overflow: hidden;
 }
+
+#btn-instagram
+{
+    position: relative;
+    
+    & span
+    {
+        z-index: 4;
+    }
+
+    & div {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 50px;
+        background-color: rgba(202, 202, 204, 0.178);
+        overflow: hidden;
+
+    }
+}
+
+#btn-instagram:hover
+{
+    transform: scale(1.1);
+    
+    & div {
+        z-index: 1;
+        animation: btn-animation 5s ease-in;
+    }
+    
+}
+
+@keyframes btn-animation {
+    0% {
+        overflow: hidden;
+        transform: scaleX(0);
+    }
+
+    25% {
+        transform: scaleX(-50);
+    }
+
+    50% {
+        transform: scaleX(-100);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+
+
 
 /* sessão de coantatos */
 section#contacts
 {
     /* spacing */
-    padding: 3%;
+    padding: 2%;
 
     /* box model */
     display: flex;
@@ -313,7 +369,7 @@ section#contacts
 
     h2 {
         color: black;
-        padding: 5% 3% 7% 3%;
+        padding: 5% 3% 5% 3%;
     }
 
 }
@@ -325,22 +381,36 @@ section#icons-contacts-container
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 0;
 
-   
+
 }
 
 section#icons-contacts-container a
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    width: 90px;
+    height: 90px;
+
+    background-color: gray;
+    border-radius: 50%;
 
 
-    img {
-        width: 60px;
-        height: 60px;
-    }
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    
+}
 
-    margin-bottom: 20%;
-
+section#icons-contacts-container a:hover
+{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
 }
 
 /* footer do site */
